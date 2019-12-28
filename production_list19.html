@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+<title>玉明设计</title>
+<link rel="shortcut icon" href="images/yming.ico">
+<link rel="stylesheet" type="text/css" href="css/production_list.css">
+<link rel="stylesheet" type="text/css" href="css/header.css">
+</head>
+
+<body>
+<div id="top">
+	<div id="header">
+        <div id="logo"><a href="http://www.yming.design"><img src="images/logo_02.png"></a></div>
+        <div id="nav">
+            <ul>
+                <li><a href="index.html" class="homepage">首页</a></li>
+                <li class="currently"><a href="production.html" class="production">作品</a></li>
+                <li><a href="about.html" class="about">关于</a></li>
+                <li><a href="contact.html" class="contact">联系</a></li>
+            </ul>
+        </div>
+        <div class="menu-bg"></div>
+		<div class="menu">				
+            <ul class="menu-split">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="production.html">作品</a></li>
+				<li><a href="about.html">关于</a></li>
+				<li><a href="contact.html">联系</a></li>
+			</ul>
+		</div>			            
+		<div class="burger">
+			<div class="x"></div>
+			<div class="y"></div>
+            <div class="z"></div>
+		</div>             
+    </div>
+</div>	
+<div id="main-wrapper">
+    <div id="main">
+    	<div id="title">
+        	<div id="info">
+                <span class="title">优裁在线英文官网设计</span>
+                <span class="info">
+                	<span>网页&nbsp;/&nbsp;官网</span>
+                </span>
+            </div>    
+        </div>
+        <div id="content">
+        	<div class="content_info">
+            	<div class="explain">
+                </div>
+            	<div class="work-show-box">
+                	<img src="img/gallery/banner19_01.jpg" style="padding-bottom: 40px">
+                	<img src="img/gallery/banner19_02.jpg" style="padding-bottom: 40px">
+    				<img src="img/gallery/banner19_03.jpg" style="padding-bottom: 40px">
+    				<img src="img/gallery/banner19_04.jpg" style="padding-bottom: 40px">
+    				<img src="img/gallery/banner19_05.jpg" style="padding-bottom: 40px">
+    				<img src="img/gallery/banner19_06.jpg" style="padding-bottom: 40px">
+    				<img src="img/gallery/banner19_07.jpg" style="padding-bottom: 40px">
+    				<img src="img/gallery/banner19_08.jpg" style="padding-bottom: 40px">
+    				<img src="img/gallery/banner19_09.jpg" style="padding-bottom: 40px">
+    				<img src="img/gallery/banner19_10.jpg" style="padding-bottom: 40px">
+    				<img src="img/gallery/banner19_11.jpg" style="padding-bottom: 40px">
+    				<img src="img/gallery/banner19_12.jpg" style="padding-bottom: 40px">
+                </div>
+                <p class="thank">-&nbsp;Thanks&nbsp;-</p>
+            </div>
+        </div>  
+    </div>    
+</div>
+	<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+	<script>
+	window.onload=function () {		
+		document.addEventListener('touchstart',function (event) {
+			if(event.touches.length>1){
+				event.preventDefault();
+			}
+		})
+		var lastTouchEnd=0;
+		document.addEventListener('touchend',function (event) {
+			var now=(new Date()).getTime();
+			if(now-lastTouchEnd<=300){
+				event.preventDefault();
+			}
+			lastTouchEnd=now;
+		},false)
+		document.addEventListener('gesturestart', function (event) {
+     		 event.preventDefault();
+   	    });
+	}
+      if ('ontouchstart' in window) {
+		    var click = 'touchstart';
+		} else {
+		    var click = 'click';
+		}
+		$('div.burger').on(click, function () {
+		    if (!$(this).hasClass('open')) {
+		        openMenu();
+		    } else {
+		        closeMenu();
+		    }
+		});	
+		function openMenu() {
+		    $('div.menu-bg').addClass('animate');
+		    $('div.burger').addClass('open');
+		    $('div.x, div.z').addClass('collapse');
+		    $('.menu li').addClass('animate');
+		    $('body').css({"overflow":"hidden","position":"fixed","left":"0","top":"0"});
+		    setTimeout(function () {
+		        $('div.y').hide();
+		        $('div.x').addClass('rotate30');
+		        $('div.z').addClass('rotate150');
+		    }, 70);
+		    setTimeout(function () {
+		        $('div.x').addClass('rotate45');
+		        $('div.z').addClass('rotate135');
+		    }, 120);
+			setTimeout(function () {
+		        $('div.menu').show();
+		    }, 120);
+			setTimeout(function () {
+		        $('div.menu-bg').show();
+		    }, 120);
+			setTimeout(function () {
+		        $('div.menu-bg').css("overflow","hidden");
+		    }, 120);     			
+		}
+		function closeMenu() {
+		    $('.menu li').removeClass('animate'); 
+			$('body').css({"overflow":"scroll","position":"initial","left":"0","top":"0"});
+		    setTimeout(function () {
+		        $('div.burger').removeClass('open');
+		        $('div.x').removeClass('rotate45').addClass('rotate30');
+		        $('div.z').removeClass('rotate135').addClass('rotate150');
+		        $('div.menu-bg').removeClass('animate');
+				setTimeout(function () {
+					$('div.x').removeClass('rotate30');
+					$('div.z').removeClass('rotate150');
+				}, 50);
+				setTimeout(function () {
+					$('div.y').show();
+					$('div.x, div.z').removeClass('collapse');
+				}, 70);
+				setTimeout(function () {
+					$('div.menu').hide();
+				}, 60);
+		    }, 200);
+		}
+    </script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+<title>玉明设计</title>
+<link rel="shortcut icon" href="images/yming.ico">
+<link rel="stylesheet" type="text/css" href="css/production_list.css">
+<link rel="stylesheet" type="text/css" href="css/header.css">
+</head>
+
+<body>
+<div id="top">
+	<div id="header">
+        <div id="logo"><a href="http://www.yming.design"><img src="images/logo_02.png"></a></div>
+        <div id="nav">
+            <ul>
+                <li><a href="index.html" class="homepage">首页</a></li>
+                <li class="currently"><a href="production.html" class="production">作品</a></li>
+                <li><a href="about.html" class="about">关于</a></li>
+                <li><a href="contact.html" class="contact">联系</a></li>
+            </ul>
+        </div>
+        <div class="menu-bg"></div>
+		<div class="menu">				
+            <ul class="menu-split">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="production.html">作品</a></li>
+				<li><a href="about.html">关于</a></li>
+				<li><a href="contact.html">联系</a></li>
+			</ul>
+		</div>			            
+		<div class="burger">
+			<div class="x"></div>
+			<div class="y"></div>
+            <div class="z"></div>
+		</div>             
+    </div>
+</div>
+<div id="main-wrapper">
+    <div id="main">
+    	<div id="title">
+        	<div id="info">
+                <span class="title">优裁在线服装定制APP设计</span>
+                <span class="info">
+                	<span>UI&nbsp;/&nbsp;界面</span>
+                </span>
+            </div>    
+        </div>
+        <div id="content">
+        	<div class="content_info">
+            	<div class="explain">
+                	<p>平时大家买衣服都是直接成衣购买，而工厂的成衣尺寸毕竟是死的，不能完美的穿着与每个人，有的人高矮胖瘦，穿着起来总有差异，或短或长，或紧或松，不能贴合体型，自然穿着也不会舒服和好看。服装定制app就为解决成衣不完美的痛点应运而生，整合线下服装企业和国内外面料品牌，让定制更简单，更高效，让定制走进寻常百姓，足不出户就能享受私人订制。<br>年初开始的项目，项目也算是一波三折，此项目公司从去年就开始了，由于公司业务方向、战略方向不断调整，迟迟没有上线，今年年初重启项目，重新设计，从最初C端调整方向为B、C同端再到最终独立为B端产品。通过这次的产品的完整重设，学习积累了不少，但也有很多不足的地方，期待未来呈现更好设计，和大家一起学习一起进步一起讨论。</p>
+                </div>
+            	<div class="work-show-box">
+                	<img src="img/gallery/banner17_01.jpg" style="padding-bottom: 20px">
+                    <img src="img/gallery/banner17_02.jpg" style="padding-bottom: 20px">
+                    <img src="img/gallery/banner17_03.jpg" style="padding-bottom: 20px">
+                    <img src="img/gallery/banner17_04.jpg" style="padding-bottom: 20px">
+                    <img src="img/gallery/banner17_05.jpg" style="padding-bottom: 20px">
+                    <img src="img/gallery/banner17_06.jpg" style="padding-bottom: 20px">
+                    <img src="img/gallery/banner17_07.jpg" style="padding-bottom: 20px">
+  					<img src="img/gallery/banner17_08.jpg" style="padding-bottom: 20px">
+  					<img src="img/gallery/banner17_09.jpg" style="padding-bottom: 20px">  
+  					<img src="img/gallery/banner17_10.jpg" style="padding-bottom: 20px">
+  					<img src="img/gallery/banner17_12.jpg" style="padding-bottom: 20px"> 
+  					<img src="img/gallery/banner17_11.jpg" style="padding-bottom: 20px"> 
+  					<img src="img/gallery/banner17_13.jpg" style="padding-bottom: 20px"> 
+  					<img src="img/gallery/banner17_14.jpg" style="padding-bottom: 20px"> 
+  					<img src="img/gallery/banner17_15_1.jpg" style="padding-bottom: 20px"> 
+  					<img src="img/gallery/banner17_15_2.jpg" style="padding-bottom: 20px"> 
+  					<img src="img/gallery/banner17_15_3.jpg" style="padding-bottom: 20px">   
+  					<img src="img/gallery/banner17_15_4.jpg" style="padding-bottom: 20px">
+  					<img src="img/gallery/banner17_16.jpg" style="padding-bottom: 20px">    
+                </div>
+                <p class="thank">-&nbsp;Thanks&nbsp;-</p>
+            </div>
+        </div>  
+    </div>    
+</div>
+	<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+	<script>
+	window.onload=function () {		
+		document.addEventListener('touchstart',function (event) {
+			if(event.touches.length>1){
+				event.preventDefault();
+			}
+		})
+		var lastTouchEnd=0;
+		document.addEventListener('touchend',function (event) {
+			var now=(new Date()).getTime();
+			if(now-lastTouchEnd<=300){
+				event.preventDefault();
+			}
+			lastTouchEnd=now;
+		},false)
+		document.addEventListener('gesturestart', function (event) {
+     		 event.preventDefault();
+   	    });
+	}
+      if ('ontouchstart' in window) {
+		    var click = 'touchstart';
+		} else {
+		    var click = 'click';
+		}
+		$('div.burger').on(click, function () {
+		    if (!$(this).hasClass('open')) {
+		        openMenu();
+		    } else {
+		        closeMenu();
+		    }
+		});	
+		function openMenu() {
+		    $('div.menu-bg').addClass('animate');
+		    $('div.burger').addClass('open');
+		    $('div.x, div.z').addClass('collapse');
+		    $('.menu li').addClass('animate');
+		    $('body').css({"overflow":"hidden","position":"fixed","left":"0","top":"0"});
+		    setTimeout(function () {
+		        $('div.y').hide();
+		        $('div.x').addClass('rotate30');
+		        $('div.z').addClass('rotate150');
+		    }, 70);
+		    setTimeout(function () {
+		        $('div.x').addClass('rotate45');
+		        $('div.z').addClass('rotate135');
+		    }, 120);
+			setTimeout(function () {
+		        $('div.menu').show();
+		    }, 120);
+			setTimeout(function () {
+		        $('div.menu-bg').show();
+		    }, 120);
+			setTimeout(function () {
+		        $('div.menu-bg').css("overflow","hidden");
+		    }, 120);     			
+		}
+		function closeMenu() {
+		    $('.menu li').removeClass('animate'); 
+			$('body').css({"overflow":"scroll","position":"initial","left":"0","top":"0"});
+		    setTimeout(function () {
+		        $('div.burger').removeClass('open');
+		        $('div.x').removeClass('rotate45').addClass('rotate30');
+		        $('div.z').removeClass('rotate135').addClass('rotate150');
+		        $('div.menu-bg').removeClass('animate');
+				setTimeout(function () {
+					$('div.x').removeClass('rotate30');
+					$('div.z').removeClass('rotate150');
+				}, 50);
+				setTimeout(function () {
+					$('div.y').show();
+					$('div.x, div.z').removeClass('collapse');
+				}, 70);
+				setTimeout(function () {
+					$('div.menu').hide();
+				}, 60);
+		    }, 200);
+		}
+    </script>
+</body>
+</html>

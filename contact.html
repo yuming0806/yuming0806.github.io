@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no" />
+<title>玉明设计</title>
+<link rel="shortcut icon" href="images/yming.ico">
+<link rel="stylesheet" type="text/css" href="css/contact.css">
+<link rel="stylesheet" type="text/css" href="css/header.css">
+</head>
+
+<body>
+<div id="top">
+	<div id="header">
+        <div id="logo"><a href="http://www.yming.design"><img src="images/logo_02.png"></a></div>
+        <div id="nav">
+            <ul>
+                <li><a href="index.html" class="homepage">首页</a></li>
+                <li><a href="production.html" class="production">作品</a></li>
+                <li><a href="about.html" class="about">关于</a></li>
+                <li class="currently"><a href="contact.html" class="contact">联系</a></li>
+            </ul>
+        </div>
+        <div class="menu-bg"></div>
+		<div class="menu">				
+            <ul class="menu-split">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="production.html">作品</a></li>
+				<li><a href="about.html">关于</a></li>
+				<li><a href="contact.html">联系</a></li>
+			</ul>
+		</div>			            
+		<div class="burger">
+			<div class="x"></div>
+			<div class="y"></div>
+            <div class="z"></div>
+		</div>            
+    </div>
+</div>	
+<div id="main-wrapper">
+	<div id="web_bg"><img src="images/bg4.jpg"></div>
+    <div id="phone_bg"><img src="images/phone_bg4.jpg"></div>
+    <div id="main">
+        <div id="title">
+        	<span class="chinese">联系我</span>
+            <span class="english">Contact Me</span>
+        </div>
+        <div class="content">
+        	<ul>
+            	<li class="qq"><span class="qq_icon"></span><span>16789883</span></li>
+                <li class="weixin"><span class="weixin_icon"></span><span>13552879881</span></li>
+                <li class="phone"><span class="phone_icon"></span><span>13552879881</span></li>
+                <li class="zcool">
+                	<span class="zcool_icon"></span>
+                    <span><a href="http://www.zcool.com.cn/u/13183042" target="_blank">http://www.zcool.com.cn/u/13183042</a></span>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>    
+</div>
+
+	<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+	<script>
+      if ('ontouchstart' in window) {
+		    var click = 'touchstart';
+		} else {
+		    var click = 'click';
+		}
+		$('div.burger').on(click, function () {
+		    if (!$(this).hasClass('open')) {
+		        openMenu();
+		    } else {
+		        closeMenu();
+		    }
+		});
+		$('div.menu ul li a').on(click, function (e) {
+		    closeMenu();
+		});
+		function openMenu() {
+		    $('div.menu-bg').addClass('animate');
+		    $('div.burger').addClass('open');
+		    $('div.x, div.z').addClass('collapse');
+		    $('.menu li').addClass('animate');
+		    setTimeout(function () {
+		        $('div.y').hide();
+		        $('div.x').addClass('rotate30');
+		        $('div.z').addClass('rotate150');
+		    }, 70);
+		    setTimeout(function () {
+		        $('div.x').addClass('rotate45');
+		        $('div.z').addClass('rotate135');
+		    }, 120);
+			setTimeout(function () {
+		        $('div.menu').show();
+		    }, 120);
+			setTimeout(function () {
+		        $('div.menu-bg').show();
+		    }, 120);
+		}
+		function closeMenu() {
+		    $('.menu li').removeClass('animate');
+		    setTimeout(function () {
+		        $('div.burger').removeClass('open');
+		        $('div.x').removeClass('rotate45').addClass('rotate30');
+		        $('div.z').removeClass('rotate135').addClass('rotate150');
+		        $('div.menu-bg').removeClass('animate');
+		        setTimeout(function () {
+		            $('div.x').removeClass('rotate30');
+		            $('div.z').removeClass('rotate150');
+		        }, 50);
+		        setTimeout(function () {
+		            $('div.y').show();
+		            $('div.x, div.z').removeClass('collapse');
+		        }, 70);
+				setTimeout(function () {
+		        	$('div.menu').hide();
+		    	}, 60);
+		    }, 200);
+		}
+    </script>
+</body>
+</html>
