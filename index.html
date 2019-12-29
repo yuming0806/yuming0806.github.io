@@ -1,126 +1,134 @@
 <!doctype html>
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
-<title>玉明设计</title>
-<link rel="shortcut icon" href="images/yming.ico">
-<link rel="stylesheet" type="text/css" href="css/index.css">
-<link rel="stylesheet" type="text/css" href="css/header.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>玉明设计</title>
+    <link rel="shortcut icon" href="images/yming.ico">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
 </head>
 
 <body style="overflow-y:hidden">
-<div id="top">
-	<div id="header">
-        <div id="logo"><a href="http://www.yming.design"><img src="images/logo_02.png"></a></div>
-        <div id="nav">
-            <ul>
-                <li class="currently"><a href="index.html" class="homepage">首页</a></li>
-                <li><a href="production.html" class="production">作品</a></li>
-                <li><a href="about.html" class="about">关于</a></li>
-                <li><a href="contact.html" class="contact">联系</a></li>
-            </ul>
+    <div id="top">
+        <div id="header">
+            <div id="logo">
+                <a href="http://www.yming.design"><img src="images/logo_02.png"></a>
+            </div>
+            <div id="nav">
+                <ul>
+                    <li class="currently"><a href="index.html" class="homepage">首页</a></li>
+                    <li><a href="production.html" class="production">作品</a></li>
+                    <li><a href="about.html" class="about">关于</a></li>
+                    <li><a href="contact.html" class="contact">联系</a></li>
+                </ul>
+            </div>
+            <div class="menu-bg"></div>
+            <div class="menu">
+                <ul class="menu-split">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="production.html">作品</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="contact.html">联系</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="x"></div>
+                <div class="y"></div>
+                <div class="z"></div>
+            </div>
         </div>
-        <div class="menu-bg"></div>
-		<div class="menu">				
-            <ul class="menu-split">
-				<li><a href="index.html">首页</a></li>
-				<li><a href="production.html">作品</a></li>
-				<li><a href="about.html">关于</a></li>
-				<li><a href="contact.html">联系</a></li>
-			</ul>
-		</div>			            
-		<div class="burger">
-			<div class="x"></div>
-			<div class="y"></div>
-            <div class="z"></div>
-		</div>   
     </div>
-</div>	
-<div id="homepage">
-	<div id="web_bg"><img src="images/bg1.jpg"></div>
-    <div id="phone_bg"><img src="images/phone_bg1.jpg"></div>
-    <div id="floating">
-    	<div id="ship"><img src="images/ship.png" width="291" height="289"/></div>
+    <div id="homepage">
+        <div id="web_bg"><img src="images/bg1.jpg"></div>
+        <div id="phone_bg"><img src="images/phone_bg1.jpg"></div>
+        <div id="floating">
+            <div id="ship"><img src="images/ship.png" width="291" height="289" /></div>
+        </div>
     </div>
-</div>
 
-	<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
-	<script>
-	window.onload=function () {
-		document.addEventListener('touchstart',function (event) {
-			if(event.touches.length>1){
-				event.preventDefault();
-			}
-		})
-		var lastTouchEnd=0;
-		document.addEventListener('touchend',function (event) {
-			var now=(new Date()).getTime();
-			if(now-lastTouchEnd<=300){
-				event.preventDefault();
-			}
-			lastTouchEnd=now;
-		},false)
-		document.addEventListener('gesturestart', function (event) {
-     		 event.preventDefault();
-   	    });
-	}
-      if ('ontouchstart' in window) {
-		    var click = 'touchstart';
-		} else {
-		    var click = 'click';
-		}
-		$('div.burger').on(click, function () {
-		    if (!$(this).hasClass('open')) {
-		        openMenu();
-		    } else {
-		        closeMenu();
-		    }
-		});
-		$('div.menu ul li a').on(click, function (e) {
-		    closeMenu();
-		});
-		function openMenu() {
-		    $('div.menu-bg').addClass('animate');
-		    $('div.burger').addClass('open');
-		    $('div.x, div.z').addClass('collapse');
-		    $('.menu li').addClass('animate');
-		    setTimeout(function () {
-		        $('div.y').hide();
-		        $('div.x').addClass('rotate30');
-		        $('div.z').addClass('rotate150');
-		    }, 70);
-		    setTimeout(function () {
-		        $('div.x').addClass('rotate45');
-		        $('div.z').addClass('rotate135');
-		    }, 120);
-			setTimeout(function () {
-		        $('div.menu').show();
-		    }, 120);
-			setTimeout(function () {
-		        $('div.menu-bg').show();
-		    }, 120);
-		}
-		function closeMenu() {
-		    $('.menu li').removeClass('animate');
-		    setTimeout(function () {
-		        $('div.burger').removeClass('open');
-		        $('div.x').removeClass('rotate45').addClass('rotate30');
-		        $('div.z').removeClass('rotate135').addClass('rotate150');
-		        $('div.menu-bg').removeClass('animate');
-		        setTimeout(function () {
-		            $('div.x').removeClass('rotate30');
-		            $('div.z').removeClass('rotate150');
-		        }, 50);
-		        setTimeout(function () {
-		            $('div.y').show();
-		            $('div.x, div.z').removeClass('collapse');
-		        }, 70);
-				setTimeout(function () {
-		        	$('div.menu').hide();
-		    	}, 60);
-		    }, 200);
-		}
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')
+    </script>
+    <script>
+        window.onload = function() {
+            document.addEventListener('touchstart', function(event) {
+                if (event.touches.length > 1) {
+                    event.preventDefault();
+                }
+            })
+            var lastTouchEnd = 0;
+            document.addEventListener('touchend', function(event) {
+                var now = (new Date()).getTime();
+                if (now - lastTouchEnd <= 300) {
+                    event.preventDefault();
+                }
+                lastTouchEnd = now;
+            }, false)
+            document.addEventListener('gesturestart', function(event) {
+                event.preventDefault();
+            });
+        }
+        if ('ontouchstart' in window) {
+            var click = 'touchstart';
+        } else {
+            var click = 'click';
+        }
+        $('div.burger').on(click, function() {
+            if (!$(this).hasClass('open')) {
+                openMenu();
+            } else {
+                closeMenu();
+            }
+        });
+        $('div.menu ul li a').on(click, function(e) {
+            closeMenu();
+        });
+
+        function openMenu() {
+            $('div.menu-bg').addClass('animate');
+            $('div.burger').addClass('open');
+            $('div.x, div.z').addClass('collapse');
+            $('.menu li').addClass('animate');
+            setTimeout(function() {
+                $('div.y').hide();
+                $('div.x').addClass('rotate30');
+                $('div.z').addClass('rotate150');
+            }, 70);
+            setTimeout(function() {
+                $('div.x').addClass('rotate45');
+                $('div.z').addClass('rotate135');
+            }, 120);
+            setTimeout(function() {
+                $('div.menu').show();
+            }, 120);
+            setTimeout(function() {
+                $('div.menu-bg').show();
+            }, 120);
+        }
+
+        function closeMenu() {
+            $('.menu li').removeClass('animate');
+            setTimeout(function() {
+                $('div.burger').removeClass('open');
+                $('div.x').removeClass('rotate45').addClass('rotate30');
+                $('div.z').removeClass('rotate135').addClass('rotate150');
+                $('div.menu-bg').removeClass('animate');
+                setTimeout(function() {
+                    $('div.x').removeClass('rotate30');
+                    $('div.z').removeClass('rotate150');
+                }, 50);
+                setTimeout(function() {
+                    $('div.y').show();
+                    $('div.x, div.z').removeClass('collapse');
+                }, 70);
+                setTimeout(function() {
+                    $('div.menu').hide();
+                }, 60);
+            }, 200);
+        }
     </script>
 </body>
+
 </html>

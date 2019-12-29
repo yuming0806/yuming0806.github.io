@@ -1,360 +1,377 @@
 <!doctype html>
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<meta name="description" content="jQuery plugin for one-directional scrolling with item based navigation support." />
-<title>玉明设计</title>
-<link rel="shortcut icon" href="images/yming.ico">
-<link rel="stylesheet" type="text/css" href="css/production.css">
-<link rel="stylesheet" type="text/css" href="css/header.css">
-<link href="css/style.css" rel="stylesheet"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="jQuery plugin for one-directional scrolling with item based navigation support." />
+    <title>玉明设计</title>
+    <link rel="shortcut icon" href="images/yming.ico">
+    <link rel="stylesheet" type="text/css" href="css/production.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link href="css/style.css" rel="stylesheet" />
 
 </head>
 
 <body>
-<div id="top">
-	<div id="header">
-        <div id="logo"><a href="http://www.yming.design"><img src="images/logo_02.png"></a></div>
-        <div id="nav">
-            <ul>
-                <li><a href="index.html" class="homepage">首页</a></li>
-                <li class="currently"><a href="production.html" class="production">作品</a></li>
-                <li><a href="about.html" class="about">关于</a></li>
-                <li><a href="contact.html" class="contact">联系</a></li>
-            </ul>
+    <div id="top">
+        <div id="header">
+            <div id="logo">
+                <a href="http://www.yming.design"><img src="images/logo_02.png"></a>
+            </div>
+            <div id="nav">
+                <ul>
+                    <li><a href="index.html" class="homepage">首页</a></li>
+                    <li class="currently"><a href="production.html" class="production">作品</a></li>
+                    <li><a href="about.html" class="about">关于</a></li>
+                    <li><a href="contact.html" class="contact">联系</a></li>
+                </ul>
+            </div>
+            <div class="menu-bg"></div>
+            <div class="menu">
+                <ul class="menu-split">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="production.html">作品</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="contact.html">联系</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="x"></div>
+                <div class="y"></div>
+                <div class="z"></div>
+            </div>
         </div>
-        <div class="menu-bg"></div>
-		<div class="menu">				
-            <ul class="menu-split">
-				<li><a href="index.html">首页</a></li>
-				<li><a href="production.html">作品</a></li>
-				<li><a href="about.html">关于</a></li>
-				<li><a href="contact.html">联系</a></li>
-			</ul>
-		</div>			            
-		<div class="burger">
-			<div class="x"></div>
-			<div class="y"></div>
-            <div class="z"></div>
-		</div>  
     </div>
-</div>
-<div id="main-wrapper">
-    <div id="main">
-        <div class="controls">
-            <button type="button" class="control filter" data-filter="all">所有</button>
-            <button type="button" class="control filter" data-filter=".ui">UI</button>
-            <button type="button" class="control filter" data-filter=".web">网页</button>
-            <button type="button" class="control filter" data-filter=".graphic">平面</button>
-            <button type="button" class="control filter" data-filter=".logo">标志</button>
-            <button type="button" class="control filter" data-filter=".illustrations">插画</button> 
-            <button type="button" class="control filter" data-filter=".book">书籍</button>        
-        </div>
-        <div class="container" data-ref="mixitup-container">
-            <ul class="portfolio-items">
-                <li class="item ui" data-ref="mixitup-target">
-                    <a href="production_list17.html" title="">
-                        <img src="img/gallery/17.jpg">
-	                    <div class="production_info" style="background: rgba(10,10,10,0.8);">
-	                    	<div class="info_text">
-		                    	<span>优裁在线服装定制APP设计</span>
-		                    	<span class="porduction_classification">UI&nbsp;/&nbsp;界面</span>
-	                    	</div>
-	                    </div>                        
-                    </a>
-                </li>    
-                <li class="item web" data-ref="mixitup-target">
-                    <a href="production_list19.html" title="">
-                        <img src="img/gallery/19.jpg">
-	                    <div class="production_info" style="background: rgba(10,10,10,0.6);">
-	                    	<div class="info_text">
-		                    	<span>优裁在线英文官网设计</span>
-		                    	<span class="porduction_classification">网页&nbsp;/&nbsp;企业官网</span>
-	                    	</div>
-	                    </div>                        
-                    </a>
-                </li>                            	
-                <li class="item ui" data-ref="mixitup-target">
-                    <a href="production_list01.html" title="">
-                        <img src="img/gallery/01.jpg">
- 	                    <div class="production_info" style="background: rgba(40,145,255,0.8);">
-	                    	<div class="info_text">
-		                    	<span>好策APP UI设计</span>
-		                    	<span class="porduction_classification">UI&nbsp;/&nbsp;界面</span>
-	                    	</div>
-	                    </div>                        
-                    </a>
-                </li>
-                <li class="item ui" data-ref="mixitup-target">
-                	<a href="production_list02.html" title="">
-                    	<img src="img/gallery/02.jpg">
- 	                    <div class="production_info" style="background: rgba(20,160,245,0.8);">
-	                    	<div class="info_text">
-		                    	<span>防丢码小程序设计</span>
-		                    	<span class="porduction_classification">UI&nbsp;/&nbsp;界面</span>
-	                    	</div>
-	                    </div>                     	
-                    </a>
-                </li>
-                <li class="item ui" data-ref="mixitup-target">
-                	<a href="production_list03.html" title="">
-                    	<img src="img/gallery/03.jpg">
- 	                    <div class="production_info" style="background: rgba(30,160,255,0.8);">
-	                    	<div class="info_text">
-		                    	<span>部分UI作品合集</span>
-		                    	<span class="porduction_classification">UI&nbsp;/&nbsp;界面</span>
-	                    	</div>
-	                    </div>                         	
-                    </a>
-                </li>
-                <li class="item illustrations graphic" data-ref="mixitup-target">
-                	<a href="production_list04.html" title="">
-	                    <img src="img/gallery/04.jpg">
- 	                    <div class="production_info" style="background: rgba(250,180,0,0.8);">
-	                    	<div class="info_text">
-		                    	<span>吉祥物设计</span>
-		                    	<span class="porduction_classification">平面&nbsp;/&nbsp;吉祥物</span>
-	                    	</div>
-	                    </div>  	                    
-	                </a>
-                </li>
-                <li class="item logo graphic" data-ref="mixitup-target">
-                	<a href="production_list18.html" title="">
-	                    <img src="img/gallery/18.jpg">
- 	                    <div class="production_info" style="background: rgba(0,92,242,0.8);">
-	                    	<div class="info_text">
-		                    	<span>LOGO+VI提案设计</span>
-		                    	<span class="porduction_classification">平面&nbsp;/&nbsp;标志</span>
-	                    	</div>
-	                    </div>  	                    
-	                </a>
-                </li>                
-                <li class="item graphic book" data-ref="mixitup-target">
-                	<a href="production_list05.html" title="">
-	                    <img src="img/gallery/05.jpg">
- 	                    <div class="production_info" style="background: rgba(120,130,160,0.8);">
-	                    	<div class="info_text">
-		                    	<span>二十四节气插画日程本</span>
-		                    	<span class="porduction_classification">插画&nbsp;/&nbsp;商业插画</span>
-	                    	</div>
-	                    </div>  	                    
-	                </a>
-                </li>
-                <li class="item graphic book" data-ref="mixitup-target">
-                	<a href="production_list06.html" title="">
-	                    <img src="img/gallery/06.jpg">
- 	                    <div class="production_info" style="background: rgba(120,130,160,0.8);">
-	                    	<div class="info_text">
-		                    	<span>书籍装帧合集</span>
-		                    	<span class="porduction_classification">平面&nbsp;/&nbsp;书籍</span>
-	                    	</div>
-	                    </div> 	                    
-	                </a>
-                </li>
-                <li class="item illustrations" data-ref="mixitup-target">
-                	<a href="production_list07.html" title="">
-	                    <img src="img/gallery/07.jpg">
- 	                    <div class="production_info" style="background: rgba(235,50,50,0.8);">
-	                    	<div class="info_text">
-		                    	<span>卡通形象临摹</span>
-		                    	<span class="porduction_classification">动漫&nbsp;/&nbsp;动漫形象</span>
-	                    	</div>
-	                    </div>   	                    
-	                </a>
-                </li>
-                <li class="item graphic logo" data-ref="mixitup-target">
-                	<a href="production_list08.html" title="">
-	                    <img src="img/gallery/08.jpg">
- 	                    <div class="production_info" style="background: rgba(20,20,20,0.8);">
-	                    	<div class="info_text">
-		                    	<span>LOGO设计2017年合集</span>
-		                    	<span class="porduction_classification">平面&nbsp;/&nbsp;标志</span>
-	                    	</div>
-	                    </div> 	                    
-	                </a>
-                </li>
-                <li class="item web" data-ref="mixitup-target">
-                	<a href="production_list09.html" title="">
-	                    <img src="img/gallery/09.jpg">
- 	                    <div class="production_info" style="background: rgba(20,160,120,0.8);">
-	                    	<div class="info_text">
-		                    	<span>第二届全国中学生英语能力挑战赛</span>
-		                    	<span class="porduction_classification">网页&nbsp;/&nbsp;活动</span>
-	                    	</div>
-	                    </div>		                    
-	                </a>
-                </li>
-                <li class="item web" data-ref="mixitup-target">
-                	<a href="production_list10.html" title="">
-	                    <img src="img/gallery/10.jpg">
- 	                    <div class="production_info" style="background: rgba(20,30,160,0.8);">
-	                    	<div class="info_text">
-		                    	<span>第四届中国语言智能大会</span>
-		                    	<span class="porduction_classification">网页&nbsp;/&nbsp;活动</span>
-	                    	</div>
-	                    </div>                    
-	                </a>
-                </li>
-                <li class="item web" data-ref="mixitup-target">
-                	<a href="production_list11.html" title="">
-	                    <img src="img/gallery/11.jpg">
- 	                    <div class="production_info" style="background: rgba(10,210,120,0.8);">
-	                    	<div class="info_text">
-		                    	<span>智慧课堂</span>
-		                    	<span class="porduction_classification">网页&nbsp;/&nbsp;专题</span>
-	                    	</div>
-	                    </div>   		                    
-	                </a>
-                </li>
-                <li class="item ui" data-ref="mixitup-target">
-                	<a href="production_list12.html" title="">
-	                    <img src="img/gallery/12.jpg">
- 	                    <div class="production_info" style="background: rgba(20,130,255,0.8);">
-	                    	<div class="info_text">
-		                    	<span>句酷英语小程序</span>
-		                    	<span class="porduction_classification">UI&nbsp;/&nbsp;界面</span>
-	                    	</div>
-	                    </div>   	                    
-	                </a>
-                </li>
-                <li class="item ui" data-ref="mixitup-target">
-                	<a href="production_list13.html" title="">
-	                    <img src="img/gallery/13.jpg">
- 	                    <div class="production_info" style="background: rgba(20,100,220,0.8);">
-	                    	<div class="info_text">
-		                    	<span>启动页/闪屏/引导页</span>
-		                    	<span class="porduction_classification">UI&nbsp;/&nbsp;闪屏/壁纸</span>
-	                    	</div>
-	                    </div>   	                    
-	                </a>
-                </li>
-                <li class="item ui" data-ref="mixitup-target">
-                	<a href="production_list14.html" title="">
-	                    <img src="img/gallery/14.jpg">
- 	                    <div class="production_info" style="background: rgba(250,45,40,0.8);">
-	                    	<div class="info_text">
-		                    	<span>悬赏批改小程序</span>
-		                    	<span class="porduction_classification">UI&nbsp;/&nbsp;界面</span>
-	                    	</div>
-	                    </div>   	                    
-	                </a>
-                </li>
-                <li class="item web" data-ref="mixitup-target">
-                	<a href="production_list15.html" title="">
-	                    <img src="img/gallery/15.jpg">
- 	                    <div class="production_info" style="background: rgba(20,22,40,0.8);">
-	                    	<div class="info_text">
-		                    	<span>批改码官网</span>
-		                    	<span class="porduction_classification">网页&nbsp;/&nbsp;企业官网</span>
-	                    	</div>
-	                    </div>  	                    
-	                </a>
-                </li>
-                <li class="item graphic" data-ref="mixitup-target">
-                	<a href="production_list16.html" title="">
-	                    <img src="img/gallery/16.jpg">
- 	                    <div class="production_info" style="background: rgba(210,20,25,0.8);">
-	                    	<div class="info_text">
-		                    	<span>海报设计合集</span>
-		                    	<span class="porduction_classification">平面&nbsp;/&nbsp;海报设计</span>
-	                    	</div>
-	                    </div>  	                    
-	                </a>
-                </li>
-            </ul>
-        </div>
+    <div id="main-wrapper">
+        <div id="main">
+            <div class="controls">
+                <button type="button" class="control filter" data-filter="all">所有</button>
+                <button type="button" class="control filter" data-filter=".ui">UI</button>
+                <button type="button" class="control filter" data-filter=".web">网页</button>
+                <button type="button" class="control filter" data-filter=".graphic">平面</button>
+                <button type="button" class="control filter" data-filter=".logo">标志</button>
+                <button type="button" class="control filter" data-filter=".illustrations">插画</button>
+                <button type="button" class="control filter" data-filter=".book">书籍</button>
+            </div>
+            <div class="container" data-ref="mixitup-container">
+                <ul class="portfolio-items">
+                    <li class="item ui" data-ref="mixitup-target">
+                        <a href="production_list17.html" title="">
+                            <img src="img/gallery/17.jpg">
+                            <div class="production_info" style="background: rgba(10,10,10,0.8);">
+                                <div class="info_text">
+                                    <span>优裁在线服装定制APP设计</span>
+                                    <span class="porduction_classification">UI&nbsp;/&nbsp;界面</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item web" data-ref="mixitup-target">
+                        <a href="production_list19.html" title="">
+                            <img src="img/gallery/19.jpg">
+                            <div class="production_info" style="background: rgba(10,10,10,0.6);">
+                                <div class="info_text">
+                                    <span>优裁在线英文官网设计</span>
+                                    <span class="porduction_classification">网页&nbsp;/&nbsp;企业官网</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item ui" data-ref="mixitup-target">
+                        <a href="production_list01.html" title="">
+                            <img src="img/gallery/01.jpg">
+                            <div class="production_info" style="background: rgba(40,145,255,0.8);">
+                                <div class="info_text">
+                                    <span>好策APP UI设计</span>
+                                    <span class="porduction_classification">UI&nbsp;/&nbsp;界面</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item ui" data-ref="mixitup-target">
+                        <a href="production_list02.html" title="">
+                            <img src="img/gallery/02.jpg">
+                            <div class="production_info" style="background: rgba(20,160,245,0.8);">
+                                <div class="info_text">
+                                    <span>防丢码小程序设计</span>
+                                    <span class="porduction_classification">UI&nbsp;/&nbsp;界面</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item ui" data-ref="mixitup-target">
+                        <a href="production_list03.html" title="">
+                            <img src="img/gallery/03.jpg">
+                            <div class="production_info" style="background: rgba(30,160,255,0.8);">
+                                <div class="info_text">
+                                    <span>部分UI作品合集</span>
+                                    <span class="porduction_classification">UI&nbsp;/&nbsp;界面</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item illustrations graphic" data-ref="mixitup-target">
+                        <a href="production_list04.html" title="">
+                            <img src="img/gallery/04.jpg">
+                            <div class="production_info" style="background: rgba(250,180,0,0.8);">
+                                <div class="info_text">
+                                    <span>吉祥物设计</span>
+                                    <span class="porduction_classification">平面&nbsp;/&nbsp;吉祥物</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item logo graphic" data-ref="mixitup-target">
+                        <a href="production_list18.html" title="">
+                            <img src="img/gallery/18.jpg">
+                            <div class="production_info" style="background: rgba(0,92,242,0.8);">
+                                <div class="info_text">
+                                    <span>LOGO+VI提案设计</span>
+                                    <span class="porduction_classification">平面&nbsp;/&nbsp;标志</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item graphic book" data-ref="mixitup-target">
+                        <a href="production_list05.html" title="">
+                            <img src="img/gallery/05.jpg">
+                            <div class="production_info" style="background: rgba(120,130,160,0.8);">
+                                <div class="info_text">
+                                    <span>二十四节气插画日程本</span>
+                                    <span class="porduction_classification">插画&nbsp;/&nbsp;商业插画</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item graphic book" data-ref="mixitup-target">
+                        <a href="production_list06.html" title="">
+                            <img src="img/gallery/06.jpg">
+                            <div class="production_info" style="background: rgba(120,130,160,0.8);">
+                                <div class="info_text">
+                                    <span>书籍装帧合集</span>
+                                    <span class="porduction_classification">平面&nbsp;/&nbsp;书籍</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item illustrations" data-ref="mixitup-target">
+                        <a href="production_list07.html" title="">
+                            <img src="img/gallery/07.jpg">
+                            <div class="production_info" style="background: rgba(235,50,50,0.8);">
+                                <div class="info_text">
+                                    <span>卡通形象临摹</span>
+                                    <span class="porduction_classification">动漫&nbsp;/&nbsp;动漫形象</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item graphic logo" data-ref="mixitup-target">
+                        <a href="production_list08.html" title="">
+                            <img src="img/gallery/08.jpg">
+                            <div class="production_info" style="background: rgba(20,20,20,0.8);">
+                                <div class="info_text">
+                                    <span>LOGO设计2017年合集</span>
+                                    <span class="porduction_classification">平面&nbsp;/&nbsp;标志</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item web" data-ref="mixitup-target">
+                        <a href="production_list09.html" title="">
+                            <img src="img/gallery/09.jpg">
+                            <div class="production_info" style="background: rgba(20,160,120,0.8);">
+                                <div class="info_text">
+                                    <span>第二届全国中学生英语能力挑战赛</span>
+                                    <span class="porduction_classification">网页&nbsp;/&nbsp;活动</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item web" data-ref="mixitup-target">
+                        <a href="production_list10.html" title="">
+                            <img src="img/gallery/10.jpg">
+                            <div class="production_info" style="background: rgba(20,30,160,0.8);">
+                                <div class="info_text">
+                                    <span>第四届中国语言智能大会</span>
+                                    <span class="porduction_classification">网页&nbsp;/&nbsp;活动</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item web" data-ref="mixitup-target">
+                        <a href="production_list11.html" title="">
+                            <img src="img/gallery/11.jpg">
+                            <div class="production_info" style="background: rgba(10,210,120,0.8);">
+                                <div class="info_text">
+                                    <span>智慧课堂</span>
+                                    <span class="porduction_classification">网页&nbsp;/&nbsp;专题</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item ui" data-ref="mixitup-target">
+                        <a href="production_list12.html" title="">
+                            <img src="img/gallery/12.jpg">
+                            <div class="production_info" style="background: rgba(20,130,255,0.8);">
+                                <div class="info_text">
+                                    <span>句酷英语小程序</span>
+                                    <span class="porduction_classification">UI&nbsp;/&nbsp;界面</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item ui" data-ref="mixitup-target">
+                        <a href="production_list13.html" title="">
+                            <img src="img/gallery/13.jpg">
+                            <div class="production_info" style="background: rgba(20,100,220,0.8);">
+                                <div class="info_text">
+                                    <span>启动页/闪屏/引导页</span>
+                                    <span class="porduction_classification">UI&nbsp;/&nbsp;闪屏/壁纸</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item ui" data-ref="mixitup-target">
+                        <a href="production_list14.html" title="">
+                            <img src="img/gallery/14.jpg">
+                            <div class="production_info" style="background: rgba(250,45,40,0.8);">
+                                <div class="info_text">
+                                    <span>悬赏批改小程序</span>
+                                    <span class="porduction_classification">UI&nbsp;/&nbsp;界面</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item web" data-ref="mixitup-target">
+                        <a href="production_list15.html" title="">
+                            <img src="img/gallery/15.jpg">
+                            <div class="production_info" style="background: rgba(20,22,40,0.8);">
+                                <div class="info_text">
+                                    <span>批改码官网</span>
+                                    <span class="porduction_classification">网页&nbsp;/&nbsp;企业官网</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item graphic" data-ref="mixitup-target">
+                        <a href="production_list16.html" title="">
+                            <img src="img/gallery/16.jpg">
+                            <div class="production_info" style="background: rgba(210,20,25,0.8);">
+                                <div class="info_text">
+                                    <span>海报设计合集</span>
+                                    <span class="porduction_classification">平面&nbsp;/&nbsp;海报设计</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-    </div> 
-    <!--<div id="web_bg"><img src="images/product_bg.jpg"></div>-->    
-</div>
+        </div>
+        <!--<div id="web_bg"><img src="images/product_bg.jpg"></div>-->
+    </div>
 
     <!--<script src="http://www.jq22.com/jquery/2.1.1/jquery.min.js"></script>-->
-    <script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
-	<script>
-	window.onload=function () {
-		document.addEventListener('touchstart',function (event) {
-			if(event.touches.length>1){
-				event.preventDefault();
-			}
-		})
-		var lastTouchEnd=0;
-		document.addEventListener('touchend',function (event) {
-			var now=(new Date()).getTime();
-			if(now-lastTouchEnd<=300){
-				event.preventDefault();
-			}
-			lastTouchEnd=now;
-		},false)
-		document.addEventListener('gesturestart', function (event) {
-     		 event.preventDefault();
-   	    });
-	}
-      if ('ontouchstart' in window) {
-		    var click = 'touchstart';
-		} else {
-		    var click = 'click';
-		}
-		$('div.burger').on(click, function () {
-		    if (!$(this).hasClass('open')) {
-		        openMenu();
-		    } else {
-		        closeMenu();
-		    }
-		});
-		$('div.menu ul li a').on(click, function (e) {
-		    closeMenu();
-		});
-		function openMenu() {
-		    $('div.menu-bg').addClass('animate');
-		    $('div.burger').addClass('open');
-		    $('div.x, div.z').addClass('collapse');
-		    $('.menu li').addClass('animate');
-		    $('body').css({"overflow":"hidden","position":"fixed","left":"0","top":"0"});
-		    setTimeout(function () {
-		        $('div.y').hide();
-		        $('div.x').addClass('rotate30');
-		        $('div.z').addClass('rotate150');
-		    }, 70);
-		    setTimeout(function () {
-		        $('div.x').addClass('rotate45');
-		        $('div.z').addClass('rotate135');
-		    }, 120);
-			setTimeout(function () {
-		        $('div.menu').show();
-		    }, 120);
-			setTimeout(function () {
-		        $('div.menu-bg').show();
-		    }, 120);
-			setTimeout(function () {
-		        $('div.menu-bg').css("overflow","hidden");
-		    }, 120);     			
-		}
-		function closeMenu() {
-		    $('.menu li').removeClass('animate');
-		    $('body').css({"overflow":"scroll","position":"initial","left":"0","top":"0"});
-		    setTimeout(function () {
-		        $('div.burger').removeClass('open');
-		        $('div.x').removeClass('rotate45').addClass('rotate30');
-		        $('div.z').removeClass('rotate135').addClass('rotate150');
-		        $('div.menu-bg').removeClass('animate');
-				setTimeout(function () {
-					$('div.x').removeClass('rotate30');
-					$('div.z').removeClass('rotate150');
-				}, 50);
-				setTimeout(function () {
-					$('div.y').show();
-					$('div.x, div.z').removeClass('collapse');
-				}, 70);
-				setTimeout(function () {
-			        $('div.menu-bg').css("display","none");
-			    }, 120); 			
-				setTimeout(function () {
-					$('div.menu').hide();
-				}, 60);
-		    }, 200);
-		}
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')
+    </script>
+    <script>
+        window.onload = function() {
+            document.addEventListener('touchstart', function(event) {
+                if (event.touches.length > 1) {
+                    event.preventDefault();
+                }
+            })
+            var lastTouchEnd = 0;
+            document.addEventListener('touchend', function(event) {
+                var now = (new Date()).getTime();
+                if (now - lastTouchEnd <= 300) {
+                    event.preventDefault();
+                }
+                lastTouchEnd = now;
+            }, false)
+            document.addEventListener('gesturestart', function(event) {
+                event.preventDefault();
+            });
+        }
+        if ('ontouchstart' in window) {
+            var click = 'touchstart';
+        } else {
+            var click = 'click';
+        }
+        $('div.burger').on(click, function() {
+            if (!$(this).hasClass('open')) {
+                openMenu();
+            } else {
+                closeMenu();
+            }
+        });
+        $('div.menu ul li a').on(click, function(e) {
+            closeMenu();
+        });
+
+        function openMenu() {
+            $('div.menu-bg').addClass('animate');
+            $('div.burger').addClass('open');
+            $('div.x, div.z').addClass('collapse');
+            $('.menu li').addClass('animate');
+            $('body').css({
+                "overflow": "hidden",
+                "position": "fixed",
+                "left": "0",
+                "top": "0"
+            });
+            setTimeout(function() {
+                $('div.y').hide();
+                $('div.x').addClass('rotate30');
+                $('div.z').addClass('rotate150');
+            }, 70);
+            setTimeout(function() {
+                $('div.x').addClass('rotate45');
+                $('div.z').addClass('rotate135');
+            }, 120);
+            setTimeout(function() {
+                $('div.menu').show();
+            }, 120);
+            setTimeout(function() {
+                $('div.menu-bg').show();
+            }, 120);
+            setTimeout(function() {
+                $('div.menu-bg').css("overflow", "hidden");
+            }, 120);
+        }
+
+        function closeMenu() {
+            $('.menu li').removeClass('animate');
+            $('body').css({
+                "overflow": "scroll",
+                "position": "initial",
+                "left": "0",
+                "top": "0"
+            });
+            setTimeout(function() {
+                $('div.burger').removeClass('open');
+                $('div.x').removeClass('rotate45').addClass('rotate30');
+                $('div.z').removeClass('rotate135').addClass('rotate150');
+                $('div.menu-bg').removeClass('animate');
+                setTimeout(function() {
+                    $('div.x').removeClass('rotate30');
+                    $('div.z').removeClass('rotate150');
+                }, 50);
+                setTimeout(function() {
+                    $('div.y').show();
+                    $('div.x, div.z').removeClass('collapse');
+                }, 70);
+                setTimeout(function() {
+                    $('div.menu-bg').css("display", "none");
+                }, 120);
+                setTimeout(function() {
+                    $('div.menu').hide();
+                }, 60);
+            }, 200);
+        }
     </script>
 
 
@@ -374,4 +391,5 @@
     </script>
 
 </body>
+
 </html>

@@ -1,209 +1,243 @@
 /* 头部 */
-#top { 
-  width:100%;
-  display:inline-block;
-  margin:auto;
-  text-align:center;
-  z-index: 999;
-  position: absolute;
-  top: 0;
+
+#top {
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    z-index: 999;
+    position: absolute;
+    top: 0;
 }
+
 #header {
-  width:100%;
-  height:72px;
-  min-width:1200px;
-  background:#fff;
-  text-align:center;
+    width: 100%;
+    height: 72px;
+    min-width: 1200px;
+    background: #fff;
+    text-align: center;
 }
+
 #logo {
-  float:left;
-  margin-left: 40px;
-  height:72px;
+    float: left;
+    margin-left: 40px;
+    height: 72px;
 }
+
 #logo a {
-  float: left;
-  height: 72px;
+    float: left;
+    height: 72px;
 }
+
 #logo img {
-  height:40px;
-  margin:16px 0;
+    height: 40px;
+    margin: 16px 0;
 }
+
 #nav {
-  float:right;
-  margin-right: 40px;
-  z-index:9999;   
+    float: right;
+    margin-right: 40px;
+    z-index: 9999;
 }
+
 .burger {
-  display:none; 
+    display: none;
 }
+
 #nav ul {
-  float:left;
-  margin: 6px 0;
-  height: 60px;
+    float: left;
+    margin: 6px 0;
+    height: 60px;
 }
+
 #nav ul li {
-  float:left;
-  width:60px;
-  height:60px;
-  text-align:center;
-  list-style:none;
-  margin-left: 8px;
+    float: left;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    list-style: none;
+    margin-left: 8px;
 }
+
 #nav ul li a {
-  text-align:center;
-  font-size:12px;
-  line-height:60px;
-  text-decoration:none;
-  color:#303030;
-  font-family:chinesefonts;
+    text-align: center;
+    font-size: 12px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #303030;
+    font-family: chinesefonts;
 }
+
 #nav ul li :hover {
-  float:left;
-  width:60px;
-  height:60px;
-  background:url(../images/ink.png) no-repeat center !important;
-  color:#fff;
+    float: left;
+    width: 60px;
+    height: 60px;
+    background: url(../images/ink.png) no-repeat center !important;
+    color: #fff;
 }
+
 .currently {
-  background:url(../images/ink.png) no-repeat  center !important;
+    background: url(../images/ink.png) no-repeat center !important;
 }
+
 .currently a {
-  color: #fff !important;
+    color: #fff !important;
 }
+
+
 /* 结束 */
 
-
 div.menu-bg {
-  display:none; 
+    display: none;
 }
+
 div.burger {
-  height: 40px; 
-  width: 40px;
-  margin-top: 12px;
-  position: absolute;
-  top: 0px; 
-  right: 0px;
-  cursor: pointer;  
+    height: 40px;
+    width: 40px;
+    margin-top: 12px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
 }
-  div.x,
-  div.y,
-  div.z {
-    position: absolute; margin: auto;
-    top: 0px; bottom: 0px;    
+
+div.x,
+div.y,
+div.z {
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
     background: #000;
-    border-radius:2px;
+    border-radius: 2px;
     -webkit-transition: all 200ms ease-out;
-       -moz-transition: all 200ms ease-out;
-        -ms-transition: all 200ms ease-out;
-         -o-transition: all 200ms ease-out;
-            transition: all 200ms ease-out;
-  }   
-  div.x, div.y, div.z { height: 3px; width: 26px; }
-  div.y{top: 18px;}
-  div.z{top: 37px;}
-  div.collapse{
+    -moz-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
+div.x,
+div.y,
+div.z {
+    height: 3px;
+    width: 26px;
+}
+
+div.y {
+    top: 18px;
+}
+
+div.z {
+    top: 37px;
+}
+
+div.collapse {
     top: 20px;
     -webkit-transition: all 70ms ease-out;
-       -moz-transition: all 70ms ease-out;
-        -ms-transition: all 70ms ease-out;
-         -o-transition: all 70ms ease-out;
-            transition: all 70ms ease-out;
-  }
-   
-  
-  div.rotate30{
-    -ms-transform: rotate(30deg); 
-      -webkit-transform: rotate(30deg); 
-      transform: rotate(30deg); 
-    -webkit-transition: all 50ms ease-out;
-       -moz-transition: all 50ms ease-out;
-        -ms-transition: all 50ms ease-out;
-         -o-transition: all 50ms ease-out;
-            transition: all 50ms ease-out;          
-  }
-  div.rotate150{
-    -ms-transform: rotate(150deg); 
-      -webkit-transform: rotate(150deg); 
-      transform: rotate(150deg);  
-    -webkit-transition: all 50ms ease-out;
-       -moz-transition: all 50ms ease-out;
-        -ms-transition: all 50ms ease-out;
-         -o-transition: all 50ms ease-out;
-            transition: all 50ms ease-out;          
-  }
-  
-  div.rotate45{
-    -ms-transform: rotate(45deg); 
-      -webkit-transform: rotate(45deg); 
-      transform: rotate(45deg); 
-    -webkit-transition: all 100ms ease-out;
-       -moz-transition: all 100ms ease-out;
-        -ms-transition: all 100ms ease-out;
-         -o-transition: all 100ms ease-out;
-            transition: all 100ms ease-out;         
-  }
-  div.rotate135{
-    -ms-transform: rotate(135deg); 
-      -webkit-transform: rotate(135deg); 
-      transform: rotate(135deg);  
-    -webkit-transition: all 100ms ease-out;
-       -moz-transition: all 100ms ease-out;
-        -ms-transition: all 100ms ease-out;
-         -o-transition: all 100ms ease-out;
-            transition: all 100ms ease-out;         
-  }
+    -moz-transition: all 70ms ease-out;
+    -ms-transition: all 70ms ease-out;
+    -o-transition: all 70ms ease-out;
+    transition: all 70ms ease-out;
+}
 
-div.menu-bg{  
-  width: 100%;
-  height: 100%; 
-  position:fixed;  
-  top:0;
-  left:0;
-  background:#fff;
-  opacity:0;
-  -webkit-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
-     -moz-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
-      -ms-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
-       -o-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
-          transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000); 
+div.rotate30 {
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    -webkit-transition: all 50ms ease-out;
+    -moz-transition: all 50ms ease-out;
+    -ms-transition: all 50ms ease-out;
+    -o-transition: all 50ms ease-out;
+    transition: all 50ms ease-out;
 }
-div.menu-bg.animate{
-  opacity:0.9;
-  -webkit-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
-     -moz-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
-      -ms-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
-       -o-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
-          transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);         
-  
+
+div.rotate150 {
+    -ms-transform: rotate(150deg);
+    -webkit-transform: rotate(150deg);
+    transform: rotate(150deg);
+    -webkit-transition: all 50ms ease-out;
+    -moz-transition: all 50ms ease-out;
+    -ms-transition: all 50ms ease-out;
+    -o-transition: all 50ms ease-out;
+    transition: all 50ms ease-out;
 }
+
+div.rotate45 {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 100ms ease-out;
+    -moz-transition: all 100ms ease-out;
+    -ms-transition: all 100ms ease-out;
+    -o-transition: all 100ms ease-out;
+    transition: all 100ms ease-out;
+}
+
+div.rotate135 {
+    -ms-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    -webkit-transition: all 100ms ease-out;
+    -moz-transition: all 100ms ease-out;
+    -ms-transition: all 100ms ease-out;
+    -o-transition: all 100ms ease-out;
+    transition: all 100ms ease-out;
+}
+
+div.menu-bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    opacity: 0;
+    -webkit-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    -moz-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    -ms-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    -o-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+}
+
+div.menu-bg.animate {
+    opacity: 0.9;
+    -webkit-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    -moz-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    -ms-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    -o-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+}
+
 div.menu {
-  height: 100%; 
-  width: 100%;
-  display:none;
-}
-.menu-split {
-  overflow:hidden;
-  position: absolute;
-  top: 80px;  
-  left: 0px;
-  width:100%;
+    height: 100%;
+    width: 100%;
+    display: none;
 }
 
+.menu-split {
+    overflow: hidden;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    width: 100%;
+}
 
 div.menu ul li {
-  list-style: none;
-  width:100%;
-  margin-top:40px;
-  text-align:center;
-  font-size:19px;
-  -webkit-transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
-     -moz-transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
-      -ms-transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
-       -o-transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
-          transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    list-style: none;
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 19px;
+    -webkit-transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    -moz-transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    -ms-transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    -o-transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
 }
+
 div.menu ul li a {
-  margin-top: 10px;
+    margin-top: 10px;
     display: block;
     font-family: chinesefonts;
     text-align: center;
@@ -213,57 +247,57 @@ div.menu ul li a {
     text-decoration: none;
 }
 
-section > div {
+section>div {
     transition: transform 1s;
     transform: translateX(0px);
 }
 
-div.menu li.animate{
-  font-size:19px;
-  opacity:1;
-  -webkit-transition: all 200ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
-     -moz-transition: all 200ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
-      -ms-transition: all 200ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
-       -o-transition: all 200ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
-          transition: all 200ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+div.menu li.animate {
+    font-size: 19px;
+    opacity: 1;
+    -webkit-transition: all 200ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    -moz-transition: all 200ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    -ms-transition: all 200ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    -o-transition: all 200ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    transition: all 200ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
 }
 
 @media (max-width:768px) {
     #top {
-      height: 72px;
+        height: 72px;
     }
     #header {
-      width: 100% !important;
-      min-width: 320px !important;
-      padding-top:0px;
-      top: 0px;
-      background: #fff;
-      margin: 0;
-      height: 72px;
-      position: fixed;
+        width: 100% !important;
+        min-width: 320px !important;
+        padding-top: 0px;
+        top: 0px;
+        background: #fff;
+        margin: 0;
+        height: 72px;
+        position: fixed;
     }
     #logo {
-      margin-left:10px;
-      height: 72px;
+        margin-left: 10px;
+        height: 72px;
     }
     #logo img {
-      height: 40px;
-      margin: 16px 0;
-    } 
+        height: 40px;
+        margin: 16px 0;
+    }
     #nav {
-      display:none;
+        display: none;
     }
     .nav-toggle {
-      display:block;  
-    }  
+        display: block;
+    }
     .burger {
-      display:block;
-      z-index: 9999;
+        display: block;
+        z-index: 9999;
     }
     div.burger {
-      margin-top: 6px;
+        margin-top: 6px;
     }
     #floating {
-      display:none;
-    }    
+        display: none;
+    }
 }
