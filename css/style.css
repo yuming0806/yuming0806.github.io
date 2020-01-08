@@ -23,15 +23,24 @@
 /* Controls
 ---------------------------------------------------------------------- */
 
+.shot-subnav {
+    background: #fff;
+    padding: 20px 30px;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+}
+
 .controls {
-    padding: 0 41px;
-    height: 24px;
+    /* padding: 0 41px; */
+    /* height: 24px;
     line-height: 24px;
-    margin-bottom: 8px;
+    margin-bottom: 8px; */
+    display: inline-block;
 }
 
 .control {
-    margin-right: 18px;
+    padding: 0px 30px;
     font-size: 12px;
     height: 20px;
     line-height: 20px;
@@ -45,7 +54,7 @@
 .control:hover {
     color: #303030 !important;
     font-weight: 500;
-    border-bottom: 1px solid #333;
+    /* border-bottom: 1px solid #333; */
 }
 
 .control[data-sort]:after {
@@ -67,13 +76,13 @@
 .mixitup-control-active {
     color: #303030 !important;
     font-weight: 500;
-    border-bottom: 1px solid #333;
+    /* border-bottom: 1px solid #333; */
 }
 
 .mixitup-control-active[data-filter]:after {
     color: #303030 !important;
     font-weight: 500;
-    border-bottom: 1px solid #333;
+    /* border-bottom: 1px solid #333; */
 }
 
 .control:first-of-type {}
@@ -86,7 +95,11 @@
 /* Container
 ---------------------------------------------------------------------- */
 
-.container {}
+.container {
+    /* width: 1180px; */
+    margin: auto;
+    height: 100%;
+}
 
 .container:after {
     content: '';
@@ -115,8 +128,7 @@
 }
 
 .item img {
-    width: 260px;
-    height: 234px;
+    width: 100%;
     transform: scale(1);
     transition: all 1s ease 0s;
     -webkit-transform: scale(1);
@@ -132,8 +144,8 @@
 
 .item,
 .gap {
-    width: 260px;
-    height: 234px;
+    width: 280px;
+    height: 254px;
 }
 
 
@@ -163,19 +175,23 @@ a.link {
 }
 
 .portfolio-items {
-    overflow-x: scroll !important;
+    /* overflow-x: scroll !important;
     overflow-y: hidden;
-    white-space: nowrap;
+    white-space: nowrap; */
     position: relative;
-    padding: 0 40px;
+    /* padding: 0 40px; */
     margin-top: 12px;
     font-size: 0;
-    height: 258px;
+    height: 100%;
 }
 
 .portfolio-items>li {
     display: inline-block;
     vertical-align: top;
+    margin: 10px;
+    padding: 0;
+    float: left;
+    border: 10px solid #fff;
 }
 
 .item {
