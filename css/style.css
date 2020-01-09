@@ -180,9 +180,21 @@ a.link {
     white-space: nowrap; */
     position: relative;
     /* padding: 0 40px; */
-    margin-top: 12px;
+    /* margin-top: 12px; */
     font-size: 0;
     height: 100%;
+}
+
+.portfolio-items {
+    zoom: 1
+}
+
+.portfolio-items:after {
+    display: block;
+    content: '';
+    clear: both;
+    height: 0;
+    overflow: hidden;
 }
 
 .portfolio-items>li {
@@ -192,6 +204,7 @@ a.link {
     padding: 0;
     float: left;
     border: 10px solid #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
 }
 
 .item {

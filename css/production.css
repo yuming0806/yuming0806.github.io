@@ -81,7 +81,7 @@ span::selection {
 
 #main-wrapper {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     background-size: cover;
     position: absolute;
     top: 135px;
@@ -144,7 +144,8 @@ span::selection {
 
 #main {
     width: 1200px;
-    height: 100%;
+    padding-top: 10px;
+    /* height: 100%; */
     margin: auto;
     z-index: 0;
 }
